@@ -2,12 +2,12 @@
 <widget id="com.ionicframework.snowberg385009" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>snowberg</name>
     <description>
-        An Ionic Framework and Cordova project.
+      SNOWBERG IN MY DREAM
     </description>
     <author email="feng_yun_3212@163.com" href="http://example.com.com/">
       EthanLiu
     </author>
-    <content src="index.html" />
+    <content src="Main.html" />
     <access origin="*" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
