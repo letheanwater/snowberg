@@ -6,13 +6,13 @@ angular.module('snow_berg', ['ionic'])
       .state('tabs', {
         url: "/tab",
         abstract: true,
-        templateUrl: "templates/tabs.html"
+        templateUrl: "view/tabs.html"
       })
       .state('tabs.home', {
         url: "/home",
         views: {
           'home-tab': {
-            templateUrl: "templates/home.html",
+            templateUrl: "view/home.html",
             controller: 'HomeTabCtrl'
           }
         }
