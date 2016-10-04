@@ -21,7 +21,7 @@ angular.module('snow_berg', ['ionic'])
         url: "/facts",
         views: {
           'home-tab': {
-            templateUrl: "templates/facts.html"
+            templateUrl: "view/facts.html"
           }
         }
       })
@@ -29,7 +29,7 @@ angular.module('snow_berg', ['ionic'])
         url: "/facts2",
         views: {
           'home-tab': {
-            templateUrl: "templates/facts2.html"
+            templateUrl: "view/facts2.html"
           }
         }
       })
@@ -37,7 +37,7 @@ angular.module('snow_berg', ['ionic'])
         url: "/about",
         views: {
           'about-tab': {
-            templateUrl: "templates/about.html"
+            templateUrl: "view/about.html"
           }
         }
       })
@@ -45,7 +45,7 @@ angular.module('snow_berg', ['ionic'])
         url: "/contact",
         views: {
           'contact-tab': {
-            templateUrl: "templates/contact.html"
+            templateUrl: "view/contact.html"
           }
         }
       });
