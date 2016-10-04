@@ -33,19 +33,19 @@ angular.module('snow_berg', ['ionic'])
           }
         }
       })
-      .state('tabs.about', {
-        url: "/about",
+      .state('tabs.flightclub', {
+        url: "/flightclub",
         views: {
-          'about-tab': {
-            templateUrl: "view/about.html"
+          'flightclub-tab': {
+            templateUrl: "view/flightclub.html"
           }
         }
       })
-      .state('tabs.contact', {
-        url: "/contact",
+      .state('tabs.setting', {
+        url: "/setting",
         views: {
-          'contact-tab': {
-            templateUrl: "view/contact.html"
+          'setting-tab': {
+            templateUrl: "view/setting.html"
           }
         }
       });
