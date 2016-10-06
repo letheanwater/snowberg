@@ -1,5 +1,22 @@
-angular.module('snow_berg', ['ionic'])
-
+/**
+ * module后面的参数，还是要加，不加在其他的js文件引用的时候识别不到。
+ * 要查一查这个原理，需要一个API的文档。
+ */
+angular.module('snow_berg', ['ionic','snow_berg.controllers'])
+  .run(function($ionicPlatform) {
+    $ionicPlatform.ready(function() {
+      // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+      // for form inputs)
+      if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
+        cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+        cordova.plugins.Keyboard.disableScroll(true);
+      }
+      if (window.StatusBar) {
+        // org.apache.cordova.statusbar required
+        StatusBar.styleDefault();
+      }
+    });
+  })
   .config(function($stateProvider, $urlRouterProvider) {
 
     $stateProvider
@@ -49,28 +66,5 @@ angular.module('snow_berg', ['ionic'])
           }
         }
       });
-
-
     $urlRouterProvider.otherwise("/tab/home");
-
-  })
-
-  .controller('HomeTabCtrl', function($scope) {
-    $scope.flightNews = [
-      {
-        "src":"img/avatar.jpg",
-        "title":"国庆飞行任务重",
-        "desc":"超负荷运转下如何保证安全飞行"
-      },
-      {
-        "src":"img/avatar.jpg",
-        "title":"国庆飞行任务重",
-        "desc":"超负荷运转下如何保证安全飞行"
-      },
-      {
-        "src":"img/avatar.jpg",
-        "title":"国庆飞行任务重",
-        "desc":"超负荷运转下如何保证安全飞行"
-      }
-    ];
   });
