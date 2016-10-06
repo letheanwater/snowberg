@@ -1,9 +1,8 @@
 /**
  * Created by SevenLiu on 16/10/2.
  */
-var app = angular.module('homePage', [ionic]);
-
-  app.controller('newsCtrl', function($scope) {
+angular.module('snow_berg', ['ionic'])
+  .controller('HomeTabCtrl', function($scope) {
     $scope.flightNews = [
       {
         "src":"img/avatar.jpg",

@@ -1,28 +1,25 @@
-<ion-view view-title="主页" ng-app="homePage">
+<ion-view view-title="主页">
   <ion-content class="padding">
-    <p>
-      <a class="button icon icon-right ion-chevron-right" href="#/tab/facts">Scientific Facts</a>
-    </p>
     <!-- 这里放置top3个左右的新闻 -->
-    <ion-list  ng-controller="newsCtrl">
+    <!--<ion-list>
       <ion-item ng-repeat="flightnew in flightNews" class="item-thumbnail-left">
         <img ng-src="{{flightnew.src}}">
         <h2>{{flightnew.title}}</h2>
         <p>{{flightnew.desc}}</p>
       </ion-item>
-    </ion-list>
-    <!--<div class="list">
+    </ion-list>-->
+    <div class="list">
       <div class="item item-divider">
         飞行新闻
       </div>
       <a class="item item-thumbnail-left" href="#" ng-repeat="flightnew in flightNews">
-        <!-- 这里大约是要用运行时目录的方式来设置
+        <!-- 这里大约是要用运行时目录的方式来设置 -->
         <img ng-src="{{flightnew.src}}">
         <h2>{{flightnew.title}}</h2>
         <p>{{flightnew.desc}}</p>
         <h2>{{flightnew.title}}</h2>
       </a>
-    </div>-->
+    </div>
     <!-- 这里放置3-5个热帖，可以点击更多进入帖子列表 并按回复数之类的进行排序-->
     <div class="item item-divider">
       论坛热帖
